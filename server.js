@@ -8,7 +8,21 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+// CORS configuration
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://backend-confession.vercel.app',
+    'https://confession-git-main-abhayabikramshahi.vercel.app',
+    'https://confession.vercel.app',
+    'https://confession.yugalmeet.com'
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
