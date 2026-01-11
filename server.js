@@ -16,7 +16,9 @@ const corsOptions = {
     'https://backend-confession.vercel.app',
     'https://confession-git-main-abhayabikramshahi.vercel.app',
     'https://confession.vercel.app',
-    'https://confession.yugalmeet.com'
+    'https://confession.yugalmeet.com',
+    'https://confession-frontend.vercel.app',
+    'https://*.vercel.app'
   ],
   credentials: true,
   optionsSuccessStatus: 200
