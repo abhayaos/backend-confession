@@ -5,7 +5,7 @@ const confessionSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    maxlength: 500
+    maxlength: 10000  // Increased to allow for much longer posts
   },
   author: {
     type: mongoose.Schema.Types.ObjectId,
